@@ -1,0 +1,13 @@
+language: node_js
+
+install:
+  - make deps
+
+script:
+  - make
+  - make test
+  - make lint
+
+node_js:
+  - "node"
+  - "8"
